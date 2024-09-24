@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.text-light-green{
+    color: hsl(175, 73%, 54%);
+}
+
+.btn{
+    display: inline-block;
+    padding: .75em 1.25em;
+    cursor: pointer;
+    background-image: linear-gradient(130deg, #2AFADF 10%, #C346C2 100%);
+    font-size: 1.125rem;
+    border-radius: .25em;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  background: url("./img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header{
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 1.4em 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-brand{
+    object-fit: contain;
+    height: 90px;
+    width: 90px;
+    max-width: 100%;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2em;
+
+    & a{
+        font-size: 1.14rem;
+        font-weight: 500;
+    }
+}
+
+.form-search{
+    border: 2px solid #444;
+    padding: .35em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5em;
+    border-radius: .25em;
+    background: #f3f3f3;
+
+    & a{
+        border-right: 2px solid hsl(228, 21%, 22%);
+        padding-right: .375em;
+    }
+
+    & input{
+        height: 30px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+    }
+}
+
+main{
+    width: 98%;
+    margin: 1em auto 0;
+    max-width: 1700px;
+
+    & .hero{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.2em;
+        align-items: center;
+
+        & article{
+            
+        }
+    }
+
+    & .hero__img{
+        justify-self: end;
+        min-height: 752px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .cta{
+        display: flex;
+        justify-content: center;
+        gap: 1.25em;
+        margin-top: 1.4em;
+        
+        & a{
+            color: #fff;
+        }
+    }
+}
+
+.sub-text{
+    font-size: 1.6875rem;
+    font-weight: 300;
+}
+
+.hero__text{
+    font-size: 4.6875rem;
+    font-weight: 600;
+    /* margin: .85em auto; */
+}
+
+.text-content{
+    font-size: 2.5rem;
+
+    & span{
+        color: hsl(175, 63%, 61%);
+    }
+}
