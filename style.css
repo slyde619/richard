@@ -18,7 +18,7 @@
     display: inline-block;
     padding: .75em 1.25em;
     cursor: pointer;
-    background-image: linear-gradient(130deg, #2AFADF 10%, #C346C2 100%);
+    background-image: linear-gradient(130deg, rgb(42, 250, 223) 10%, hsl(300, 51%, 52%) 100%);
     font-size: 1.125rem;
     border-radius: .25em;
 }
