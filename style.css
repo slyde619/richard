@@ -18,7 +18,7 @@
     display: inline-block;
     padding: .75em 1.25em;
     cursor: pointer;
-    background-image: linear-gradient(130deg, rgb(80, 228, 208) 10%, hsl(300, 41%, 50%) 100%);
+    background-image: linear-gradient(110deg, rgb(80, 209, 192) 40%, hsl(300, 39%, 48%) 100%);
     font-size: 1.125rem;
     border-radius: .25em;
 }
@@ -31,6 +31,7 @@ body {
   background: url("./img/background.png");
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 header{
@@ -100,9 +101,10 @@ a{
 }
 
 main{
-    width: 98%;
-    margin: 1em auto 0;
-    max-width: 1700px;
+    width: 90%;
+    margin: 0 auto 0;
+    max-width: 1800px;
+
 
     & .hero{
         width: 100%;
@@ -110,15 +112,11 @@ main{
         grid-template-columns: auto 1fr;
         gap: 1.2em;
         align-items: center;
-
-        & article{
-            
-        }
     }
 
     & .hero__img{
         justify-self: end;
-        min-height: 752px;
+        min-height: 768px;
         max-width: 100%;
         object-fit: cover;
     }
@@ -143,7 +141,6 @@ main{
 .hero__text{
     font-size: 4.6875rem;
     font-weight: 600;
-    /* margin: .85em auto; */
 }
 
 .text-content{
@@ -151,5 +148,27 @@ main{
 
     & span{
         color: hsl(175, 63%, 61%);
+    }
+}
+
+.social__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    position: absolute;
+    right: 45px;
+    bottom: 40px;
+
+
+    & a{
+        cursor: pointer;
+    }
+    & a i:hover{
+        color: hsl(250, 76%, 11%);
+    }
+    & a i{
+        font-size: 1.5rem;
+        color: hsl(0, 0%, 56%);
     }
 }
